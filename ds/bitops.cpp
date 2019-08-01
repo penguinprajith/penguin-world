@@ -62,4 +62,39 @@ int abs(int x)
 	return x;
 }
 
+char toupper(char ch)
+{
+	//check the range [a-z]
 
+	if (ch >= 'a' && ch <= 'z')
+	{
+		if (ch & 0x20)
+			ch = ch & 0xDF;
+	}
+
+	return ch;
+}
+
+char tolower(char ch)
+{
+	if (ch >= 'A' && ch <= 'Z')
+	{
+		if (!(ch & 0x20))
+			ch = ch | 0x20;
+	}
+	
+	return ch;
+}
+
+int bin2gray(int c)
+{
+	int nbits = sizeof(c) * 8;
+	int result = 0;
+
+	for (int i = 0; i < nbits; i++)
+	{
+		result = result | (((_getbit(c, i) >> i) ^ (_getbit(c, i + 1) >> (i + 1))) << i);
+	}
+
+	return result;
+}

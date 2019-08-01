@@ -577,8 +577,7 @@ link del(link head, Item data)
 			head->next = del(head->next,data);
 			return head;	
 		}	
-	}
-			
+	}			
 }
 
 void traverse(link h, void(*visit)(link p))

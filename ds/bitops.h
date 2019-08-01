@@ -12,6 +12,8 @@
 //simple xor logic to determine number equivalence
 #define _isequal(x,y)		((x ^ y) == 0)	
 
+#define _getbit(x,bitno)	( x & (1 << bitno))
+
 
 //set n bits of a variable x starting from index i to a given value b(0/1)
 // 'i' is the index
@@ -44,6 +46,9 @@ int paritycount(int x);
 int onecount(int x);
 int zerocount(int x);
 int abs(int x);
+char toupper(char ch);
+char tolower(char ch);
+int bin2gray(int);
 
 
 #endif
