@@ -8,18 +8,11 @@ typedef struct node* link;
 struct node{
 
     Item data;
+    //void* data;
     struct node* next;
 };
 
-typedef struct double_linked_list_node dnode;
-typedef struct double_linked_list_node* dlink;
 
-struct double_linked_list_node {
-
-	Item data;
-	struct double_linked_list_node* prev;
-	struct double_linked_list_node* next;
-};
 
 typedef struct btnode* btree;
 struct btnode{
@@ -63,24 +56,8 @@ struct graph{
 	
 };
 
-/*
-typedef struct BtreeNode* btlink;
-typedef struct entry {
 
-	Item key;
-	union {
-	
-		btlink next;
-		Item item;
-	
-	}ref;
-};
 
-struct BtreeNode {
-
-	entry b[10];
-	int m;
-};*/
 
 
 #endif

@@ -7,6 +7,7 @@
 link createList( Item data );
 void push_front( link* head, Item data );
 void push_back( link* head, Item data );
+
 link add(link, Item data);
 
 void recursive_push_back(link* head, Item data);
@@ -36,16 +37,6 @@ void traverse(link h, void(*visit)(link p));
 void traverseR(link h, void(*visit)(link p));
 link del(link head, Item data);
 
-//hacker_rank problems
-link insertAtPos_hacker_rank(link* ptrToHead, int data, int pos);
-link insertNodeAtPosition_hacker_rank(link head, int data, int position);
-link del_hacker_rank(link* ptrToHead, int pos);
-link deleteNode_hacker_rank(link head, int position);
-void reverse_print_hacker_rank(link head);
-link reverse_hacker_rank(link head);
-bool compare_lists_hacker_rank(link head1, link head2);
-link mergeLists_hacker_rank(link head1, link head2);
-int getNodefromTail_hacker_rank(link head, int positionFromTail);
-link removeDuplicates_hacker_rank(link head);
-int findMergeNode_hacker_rank(link head1, link head2);
+
+
 #endif
